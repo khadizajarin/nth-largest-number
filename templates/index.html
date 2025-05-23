@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth Largest Number Finder</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        input, button { padding: 10px; margin: 10px; width: 200px; }
+        button { background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Find the Nth Largest Number</h1>
+        <form action="/find_nth_largest" method="post">
+            <div>
+                <label for="numbers">Enter numbers (comma-separated):</label><br>
+                <input type="text" id="numbers" name="numbers" placeholder="e.g., 5, 2, 8, 1, 9" required>
+            </div>
+            <div>
+                <label for="n">Enter n (position):</label><br>
+                <input type="number" id="n" name="n" min="1" placeholder="e.g., 2" required>
+            </div>
+            <button type="submit">Find Nth Largest</button>
+        </form>
+    </div>
+</body>
+</html>
